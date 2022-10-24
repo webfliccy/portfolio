@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Felicity Evans (a.k.a webfliccy) Personal Site</title>
+       <link type="text/css" rel="stylesheet" href="styles.css?v2" />
+       <!-- favicon -->
+       <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+       <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+       <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+       <link rel="manifest" href="site.webmanifest">
+
+       <!-- Google fonts -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/81863781c3.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-menu">
+                    <a href="#100days">100 days</a>
+                    <a href="#articles">Writing</a>
+                    <a href="#youtube">Teaching</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </header>
+        <div class="wrapper">
+        <div class="shapes">
+            <span class="circle"></span>
+        </div>
+        <main class="content">
+        <!-- Intro section -->
+        <div class="hero-container intro">
+            <section class="hero">
+                <article class="hero-body">
+                    <p class="subtitle">Hello my name is</p>
+                    <h1 class="title">Felicity Evans <strong>Web </strong></h1>
+                    <div>
+                    <p><span>Find me online here:</span></p>
+                        <ul class="social-icons">
+                            <li><a class="icon" href="https://twitter.com/webfliccy"><i class="fa-brands fa-twitter" title="twitter"></i><span class="fa-sr-only">Twitter</span></a></li>
+                            <li><a class="icon" href="http://www.youtube.com/Webfliccy"><i class="fa-brands fa-youtube" title="Youtube"></i><span class="fa-sr-only">Youtube</span></a></li>
+                            <!-- <li><a class="icon"><i class="fa-brands fa-github" title="Github"></i><span class="fa-sr-only">Github</span></a></li> -->
+                            <li><a class="icon" href="http://www.cheekyrascal.etsy.com"><i class="fa-brands fa-etsy" title="Etsy"></i><span class="fa-sr-only">Etsy</span></a></li>
+                        </ul>
+                    </div>   
+                        <p><a href="files/Felicity-Evans-CV.pdf" class="button is-primary" download>Download resume</a></p>
+                    
+               
+                </article>
+                <div class="hero-vid">
+                    <video controls width="100%">
+
+                        
+                        <source src="intro.mp4"
+                                type="video/mp4">
+                    
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                </div>
+                
+            </section>
+        </div>
+       
+        <!-- 100 days of code -->
+    <div class="hero-container">
+        <section id="100days" class="section hero plain">
+            <article class="hero-body">
+                <a class="twitter-timeline" href="https://twitter.com/webfliccy?ref_src=twsrc%5Etfw" data-height="400" data-width="40rem">Tweets by webfliccy</a> 
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </article>
+           
+            <article  class="hero-vid">
+                <h1 class="title">#100Days <strong>of Code</strong></h1>
+                <p>After my coding hiatus I needed some external motivation to recommence my coding practice. I used #100daysofcode as a vehicle to re-aquaint myself with old skills and learn new ones. </p>
+                <p>The premise is simple: code for an hour a day, very day for 100 days and log your progress.</p>
+                <p>For me, this was a very humbling experience; but one that gave me permission to reset without expections. The increments were small (I often had no more than an hour to spare) but the overall improvement   was significant.</p>
+            </article>
+       
+        </section>
+    </div>
+         <!-- Youtube -->
+         <div class="hero-container preach">
+            <section  id="youtube" class="section hero">
+                <article class="hero-body">
+                <h1 class="title">Preach
+                    <strong>What you practice</strong>
+                </h1>
+                <div>
+                    <p>I like to share what I am learning. It hope it helps others as it cements my own practice.</p>
+                    <p>The tagline of my Youtube channel; "All web. No judgement" is a philosophy of sorts.</p>
+                    
+                </div>
+                <p><a href="https://youtube.com/Webfliccy" class="button is-primary">Watch more</a></p>
+                </article>
+                <div class="hero-vid">
+                <iframe height="280" src="https://www.youtube.com/embed/videoseries?list=PL4_zcOt3q6AX54n_0bD8XS91X4g_HYYdu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+        </div>
+        <!-- Published articles -->
+        <section id="articles" class="section">
+            <article class="block">
+                <h1  class="title">Musings</h1>
+                <p>Some of my published articles</p>
+                <article class="block">
+                    <h2 class="subtitle"><a href="https://alistapart.com/article/a-vision-for-our-sass/">A Vision for Our Sass</a></h2>
+                    <time datetime="2015-01-20T10:00:00-05:00">January 20, 2015</time>
+                    <p>A List Apart</p>
+                    <p>Sass is a powerful tool in helping us wrangle complex stylesheets. Yet it has its headaches—including troublesome nesting of CSS selectors, code duplication, and tight coupling—that result in messy outputted CSS. Universal standards aren’t a viable answer, as the Sass spec continues to quickly change and grow. Felicity Evans holds that the problem isn’t Sass itself, but the way we use it. In this article, she champions a set of tenets that offers guidelines on how to work with Sass and evaluate new features and techniques.</p>
+                </article>
+                <article class="block">
+                    <h2 class="subtitle"><a href="https://www.smashingmagazine.com/2011/07/email-is-still-important-and-here-is-why/">
+                        Email Is (Still) Important And Here Is Why</a></h2>
+                    <time datetime="2011-07-25">July 25, 2011</time>
+                    <p>Smashing Magazine</p>
+                    <p>Social media is more than a buzzword. It’s now a lifestyle decision for a lot of companies. Many individuals and organizations have abandoned a traditional web presence (which used to mean a website and email address) in favor of a Facebook page coupled with a Twitter account. However the old methods are often the best. Here Felicity explores why email still has such an important role to play.</p>
+                </article>
+                <article class="block">
+                    <h2 class="subtitle"><a href="https://www.smashingmagazine.com/2011/01/falling-for-html5-finding-love-in-the-little-things/">
+                        Falling for HTML5: Finding Love in the Little Things</a></h2>
+                    <time datetime="2011-01-21">January 21, 2011</time>
+                    <p>Smashing Magazine</p>
+                    <p>I’ve lost count of the number of posts that have been written about the big features of HTML5: amongst the most anticipated being rich media (video, audio, canvas) and JavaScript APIs. However, call me a woman of simple tastes, but this is not the sort of thing that gets me swooning. What does? The small additions to the spec that will make the world of difference to the way I code day-in, day-out. This is the stuff fairy tales are made of.</p>
+                </article>
+            </article>
+            
+        </section>
+        
+
+        <section id="contact" class="section"  >
+            <h1 class="title">Get in touch</h1>
+            <form id="contactForm" method="dialog">
+                <fieldset>
+                  <legend>Details</legend>
+                    <div>
+                      <label class="label is-sr-only" id="name-label">Name:</label>           <input id="name" name="name-label" type="text" placeholder="Full name" required />
+                     </div>
+                     <div>
+                      <label class="label is-sr-only" id="email-label">Email:</label> <input id="email" name="email-label" type="email" placeholder="Email" required />
+                    </div>
+                    <div>
+                      <label class="label is-sr-only">Subject:</label> <input id="subject" name="subject" type="text" placeholder="Subject" required />
+                    </div>
+                    <div>
+                      <label name="message" class="label is-sr-only">Message:</label>
+                      <textarea name="message" id="message" placeholder="Your message"></textarea>
+                    </div>
+                  </fieldset>
+                  <input type="submit" value="Send message" id="submit" name="submit" class="button is-primary" />
+              </form>
+              <!-- Simple modal dialog containing a form -->
+                <dialog id="confirmDialog">
+                    
+                    <p>Email sent</p>
+                    <form method="dialog">
+                    <button id="closeButton" value="cancel" class="button is-primary">Close</button>
+                    </form>
+                </dialog>
+        </section>
+    </main>
+</div>
+
+<script>
+    var thisForm = document.getElementById("contactForm");
+    const headers_ = {
+         'Authorization': 'Bearer keyQw4vc2Irbs2lAe',
+         'Content-Type': 'application/json'
+    };
+    // When the form is submitted...
+    thisForm.addEventListener("submit", function(event) {
+       event.preventDefault();
+       //show dialog
+       if (typeof confirmDialog.showModal === "function") {
+        confirmDialog.showModal();
+        } else {
+            outputBox.value = "Sorry, the <dialog> API is not supported by this browser.";
+        }
+    // POST the data
+    axios.post("https://api.airtable.com/v0/appC0hWaxUhDrK17p/Table%201",
+    {
+       "fields": {
+        "Name": document.getElementById("name").value,
+        "Email Address": document.getElementById("email").value,
+        "Message": document.getElementById("message").value,
+        "Subject": document.getElementById("subject").value
+    }
+    }, {headers: headers_}
+    )
+    .then((resp) => {
+      console.log("success!")
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
+    });
+
+    //dialog
+    const confirmDialog = document.getElementById('confirmDialog');
+    const closeButton = document.getElementById('closeButton');
+
+    // If a browser doesn't support the dialog, then hide the
+    // dialog contents by default.
+    if (typeof confirmDialog.showModal !== 'function') {
+    confirmDialog.hidden = true;
+    /* a fallback script to allow this dialog/form to function
+        for legacy browsers that do not support <dialog>
+        could be provided here.
+    */
+    }
+
+    closeButton.addEventListener('click', () => {
+        document.getElementById("contactForm").reset();
+    });
+
+    
+
+    </script>
+
+
+
+
+</body>
+</html>
