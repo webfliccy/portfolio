@@ -1,10 +1,10 @@
 :root {
     --page-width: 95rem;
-    --primary-color: #8390FA;
-    --secondary-color: #1D2F6F;
-    --light-color: #F9E9EC;
-    --highlight-color: #F88DAD;
-    --dark-color: #070707;
+    --primary-color: #9AA6FE;
+    --secondary-color: #F5E582;
+    --light-color: rgba(255, 255, 255, 0.9);
+    --highlight-color: #F5E582;
+    --dark-color: #3e4368;
 }
 
 /* Palette options:
@@ -13,6 +13,20 @@
 #FAC748 -- Maize crayola
 #F9E9EC -- Lavender blush
 #F88DAD -- Tickle me pink
+
+--Monochrome color scheme::after
+#0622F9
+#374EFB
+#687AFD
+#9AA6FE
+#CCD2FF
+
+-- Complementary
+#F8EA7F -- yellow darker
+#F5E582 -- yellow
+#8996FA
+#94A0FC
+#9FAAFE
 
     --page-width: 100rem;
     --primary-color: #3454D1;
@@ -81,7 +95,6 @@ h1,
 h2,
 h3 {
     font-size: 1rem;
-    font-family:'Gilda Display', serif;
 }
 
 .title {
@@ -100,8 +113,20 @@ h3 {
 }
 
 .content a:not(.button, .icon) {
-    color: var(--highlight-color);
+    color: var(--dark-color);
+    text-shadow: 1px 1px var(--highlight-color);
     text-decoration: underline;
+}
+
+time {
+    display: block;
+    margin-top: 2em;
+    text-transform: uppercase;
+    font-size: .7em;
+}
+
+.pub-name {
+    font-weight: bold;
 }
 
 
@@ -116,6 +141,11 @@ h3 {
     white-space: nowrap !important;
     width: 0.01em !important; }
 
+
+ /* Typography */
+ p {
+     line-height: 1.5;
+ }
 /* Containers */
 
 .section {
@@ -128,10 +158,10 @@ h3 {
     background: linear-gradient(var(--primary-color) 0, var(--primary-color) 30vh, rgba(29,47,111,.8) 100vh)
 }
 .section:nth-child(3) {
-    background: rgb(228, 39, 88)
+    background: linear-gradient(var(--primary-color) 0, var(--primary-color) 30vh, rgba(29,47,111,.8) 100vh)
 }
 .section:nth-child(5) {
-    background: #1D2F6F;
+    background: linear-gradient(var(--primary-color) 0, var(--primary-color) 30vh, rgba(29,47,111,.8) 100vh)
 }
 
 .section > .inner-section {
@@ -143,9 +173,13 @@ h3 {
     font-size: 5rem;
 }
 .section .title strong {
-    font-size: 3rem;
+    margin: .2em 0 .6em 0;
     text-shadow: none;
     font-family: Lato, sans-serif;
+    display: block;
+    font-style: italic;
+    font-size: .5em;
+    color: var(--dark-color);
 }
 
 /* Hero section */
@@ -160,15 +194,11 @@ h3 {
 }
 
 .hero .title {
-    color: var(--light-color);
+    color: var(--highlight-color);
     text-shadow: 2px 2px var(--dark-color);
 }
 
-.hero-body strong {
-    display: block;
-    font-style: italic;
-    color: var(--secondary-color);
-}
+
 .section:nth-child(1) .hero-body strong::after {
     opacity: 1;
     content: "developer";
@@ -188,12 +218,11 @@ h3 {
     color: var(--light-color);
 }
 .section.dark .title{
-    color: var(--light-color);
-    text-shadow: 2px 2px var(--dark-color);
-}
-.section.dark  strong {
     color: var(--highlight-color);
+    text-shadow: 2px 2px var(--dark-color);
+    margin-bottom: .4em;
 }
+
 
 /* Navbar */
 .navbar {
@@ -220,7 +249,7 @@ h3 {
     padding: .7rem;
     margin-left: 3rem;
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--dark-color);
     font-weight: bold;
     text-shadow: 1px 1px #fff;
 }
@@ -254,13 +283,13 @@ h3 {
 #contactForm input[type=text],
 #contactForm input[type=email] {
     border-radius: 3px;
-    background: #505f98;
-    border: 1px solid #fff;
-    color: var(--light-color);
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    color: rgba(255, 255, 255, 0.9);
     
 }
 #contactForm ::placeholder {
-    color: var(--light-color);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 
@@ -277,7 +306,7 @@ h3 {
     box-shadow: var(--dark-color) 0px 6px 0px 0px;
     color: var(--dark-color);
     cursor: pointer;
-    margin-top: 20px
+    margin-top: 2em
 }
 
 .button:hover {
