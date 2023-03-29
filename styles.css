@@ -118,6 +118,10 @@ h3 {
     text-decoration: underline;
 }
 
+.dark a:not(.button, .icon) {
+    text-shadow: 0;
+}
+
 time {
     display: block;
     margin-top: 2em;
